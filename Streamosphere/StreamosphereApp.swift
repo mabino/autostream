@@ -1,14 +1,12 @@
-//
-//  StreamosphereApp.swift
-//  Streamosphere
-//
-//  Created by Michael Bino on 4/20/25.
-//
-
+// Streamosphere.swift
 import SwiftUI
 
 @main
-struct StreamosphereApp: App {
+struct Streamosphere: App {
+    init() {
+        AppConfig.applyConfiguration()
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
